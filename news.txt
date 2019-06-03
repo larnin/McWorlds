@@ -1,0 +1,7 @@
+- Correction de nombreux bugs
+- Revision de tous les messages d'help
+- Ajout de la commande /changename
+- Ajout de la commande /changeskin
+- Ajout de la commande /resetlvl
+- Des ajouts dans le /botset
+- Quelques autres modifications mineur

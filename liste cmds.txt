@@ -1,0 +1,390 @@
+/abort - Abandonne toutes vos actions
+/abort [joueur] - Abandonne les actions du joueur
+
+/about - Donne toutes les infos sur le bloc cliqué
+
+/accept - Apres avoir lu les rules, vous les acceptez avec cette fonction
+Vous pourrez ensuite joueur sur le serveur
+
+/afk <raison> - Permet d'indiquer que vous etes absent
+/afk list - Affiche le pseudo de tous les joueurs étant absent (afk)
+Ne restez pas afk trop longtemps, ceci surcharge le serveur pour rien
+
+/afktime <raison> - Permet d'indiquer que vous etes absent
+La raison de l'absence d'affichera toutes les 5 min
+
+/award give [joueur] [nom trophé] - Donne un trophé au joueur
+/award take [joueur] [nom trophé] - Enleve un trophé au joueur
+Pour avoir la liste des trophés, utilisez /awards
+
+/awardmod add [nom trophé] : [description] - Ajoute un trophé
+/awardmod del [nom trophé] - Enleve un trophé
+Pour avoir la liste des trophés, utilisez /awards
+
+/awards - Donne la liste de tous les trophés
+/awards [joueur] - Donne la liste de tous les trophés qu'a le joueur
+
+/ban [joueur] - Banni un joueur du serveur, il ne pourra plus revenir
+/ban [#joueur] - Seul les ops seront informé du bannissement
+/ban [@joueur] - Le joueur sera banni, aura son ip bannie et toutes ses action annulées
+
+/banip [ip] - Banni une ip, le joueur se connectant avec cette ip ne pourra plus revenir
+/banip [@joueur] - Banni l'ip actuelle du joueur
+
+/bienvenue - Permet de voir le message de bienvenue du monde actuel
+Ce message s'affiche lorsque vous entrez dans la map spawn d'un monde
+/bienvenue [monde] - Affiche le message de bienvenue du monde demandé
+/bienvenue add [message] - Ajoute une ligne au message de bienvenue de votre monde
+/bienvenue set [message] - Change le message de bienvenue
+Attention: cela supprime tout ce qui a été ecrit précédement
+/bienvenue delete - Supprime le message de bienvenue de votre monde
+
+/bind [bloc] [type] - Permet de lier type a bloc
+Type sera placé a la place de bloc lorsque bloc sera posé
+/bing [bloc] - Casse la liaison entre bloc et type
+/bing clear - Casse tous les lien créés précédement
+
+/blocks - Fait la liste de tous les blocs de base
+/blocks all - Liste tous les blocs
+/blocks [bloc basic] - Liste tous les blocs ayant la meme texture que le bloc basic
+/blocks [bloc Complexe] - Donne des informations sur le bloc
+/blocks [rang] - Liste les blocs placable par un joueur du rang
+/blocks count [bloc] - Donne le nombre total de blocs du type dans la map
+
+/blockset [bloc] [rang] - Change le rang minimum qu'il faut pour pouvoir poser le bloc
+
+/botadd [nom] - Ajoute un bot
+Un bot est un joueur virtuel
+
+/botai - permet de creer une IA a un bot
+/botai <add/del> [Nom AI] <extra> - Ajoute ou supprime  [nom AI]
+Extras: walk, teleport, wait, nod, speed, spin, reset, remove, reverse, linkscript, jump
+wait, nod et spin peuvent avoir un parametre de '0,1 secondes' supplementaires
+nod et spin peuvent egalement prendre un 'troisième' parametre de vitesse
+speed fixe la vitesse a un pourcentage de la vitesse normale
+linkscript prend un nom de script comme parametre
+
+/botremove [nom] - Supprime un bot
+/botremove all - Supprime tous les bots
+Les bots doivent etre sur la meme map que vous
+
+/bots - Liste tous les bots, leurs IA et les maps dans lesquels ils sont
+
+/botset [nom bot] [IA] - Donne une IA a un bot
+L'IA doit etre créé avec un /botai
+Elle peut aussi etre kill et hunt
+/botset [nom bot] - Supprime l'IA au bot
+
+/botsummon [nom bot] - Déplace un bot vers vous
+
+/clearblockchanges <map> <monde> - Supprime toutes les informations sur les changements de blocs
+La map doit etre chargée
+Les informations sur le changement des blocs sont accessible avec /about
+
+/click [X Y Z] - Simule un clic a la position indiquée
+/click - Simule un clic au dernier point cliqué
+Si des valeurs sont remplacé par 'x', 'y' ou 'z', des coordonées du précédent point seront utilisé
+
+/clones [joueur] - Trouve les joueur ayant la meme adresse ip que celui indiqué
+
+/cmdbind [commande] [num] - Lie la commande a un nombre
+Réutiliser la commande avec /[num]
+/cmdbind - Liste tous les lien créés
+/cmdbine [num] - Affiche la commande liée a cette valeur
+
+/colonne [type] - Permet de creer une colonne de blocs jusqu'au sommet de la map
+/colonne [type] [taille] - Permet de faire colonne d'une taille connue
+Le bloc placé détermine la base de la colonne
+
+/color [joueur] [couleur] - Change la couleur du pseudo du joueur
+/color [joueur] <del> - Supprime la couleur du joueur, elle revient a la couleur par défaut de son rang
+
+/copy - Permet de copier des blocs
+/copy cut - Copie la zone puis la remplace par de l'air
+/copy air - Copie tout dont l'air
+/copy ignore [bloc1] <bloc2> ... - Copie la zone sans les blocs a ignorer
+/copy @ - Apres la copie, on peut dirrectement coller l'élément
+
+/crashserveur - Kick le joueur executant la fonction en lui faisant croir que le serveur a planté
+
+/ctf - Active le mode CTF sur la map
+Le CTF (capture the flag) est un jeu où il faut capturer le drapeau de l'équipe adverse pour le ramener dans son camps
+/ctf start - Permet de démarrer la partie
+Le mode ctf doit etre activé et la map configuré
+/ctf stop - Arette le jeu 
+/ctf ff - Active/désactive la possibilité de tirer sur ses alliers
+/ctf flag [couleur] - Place le drapeau de l'équipe a la position du bloc cliqué
+/ctf spawn [couleur] - Place le spawn de l'équipe a votre position
+/ctf points [num] - Change le total de point a avoir pour gagner
+/ctf team add [couleur] - Ajoute une équipe
+/ctf team remove [couleur] - Supprime une équipe
+/ctf clear - Remet les données du CTF a zero
+
+/cuboid <type> - Crée un grand cube de blocs du meme type
+Si le type n'est pas indiqué, celui en main est utilisé
+/cuboid <type> [parametre] - crée un cube de bloc avec parametre
+liste des parametres valides :
+solid : type par défaut, un cube plein
+hollow : 
+walls : seul les 4 cotés verticaux sont déssinés
+holes : 
+wire :
+random : place aléatoirement un bloc a 50%
+
+/delete - Permet de supprimer tous les blocs cliqué
+Détruit doors, portals, mbs ...
+
+/deletelvl [map] - Supprime une map
+Vous devez etre dans votre monde pour éféctuer ceci
+Une sauvegarde est placé dans le dossier levelsdeleted/
+
+/demote [joueur] - Passe le joueur au rang inferieur
+
+/devs - Donne la liste de tous les développeurs de MClawl
+
+/down - Permet de descendre vers une plateforme inferieur
+/down [nombre blocs] - Descendre du nombre de blocs indiqué
+
+/drill <distance> - Creuse une galerie de taille 3*3 devant vous
+Ne creuse que dans le meme type que le bloc cliqué
+
+/drop - Vous fait lacher le drapeau
+Cette fonction ne peut etre utiliser que lorsque le CTF est activé sur la map
+
+/emote - Active ou désactive les émoticones
+
+/examine - Permet de lire les mbs au lieux de les executer
+
+/exit [joueur] - Fait sortir un joueur de vos maps
+Il est envoyé sur la map principale du serveur
+
+/faq <fichier> - Permet de lire la FAQ (foire aux questions) du serveur
+/faq <fichier> [joueur] - Envois la FAQ a un joueur
+
+/fill <bloc> <type> - Change tous les blocs du meme type en contact
+type :	- up : change les blocs au dessus
+	- down : change les blocs en dessous
+	- layer : change les blocs dans la meme epaisseur que celui cliqué
+	- vertical_x : change les blocs dans le x du point cliqué
+	- vertical_z : change les blocs dans le z du point cliqué
+
+/fixgrass <type> - Fixe l'herbe en fonction du type
+type :	- "aucun" : l'herbe sous un bloc devient terre, terre sous rien devient herbe
+	- light : seul la terre au soleil devient herbe
+	- grass : seul l'herbe sous un bloc devient terre
+	- dirt : change la terre sans rien dessus en herbe
+
+/flipheads - retourne toutes les tetes
+
+/fly - Permet de voler
+Une plateforme de verre se forme sous vous
+
+/follow [joueur] - Permet de suivre discretement un joueur
+/follow # [joueur] - Permet de suivre un joueur sans activer le hide
+
+/freeze [joueur] - Permet d'aretter un joueur
+
+/give [joueur] [valeur] - Donne de l'argent a un joueur
+Limite d'argent : 16777215
+
+/goto [map] <monde> - Permet de changer de map
+Si la map de déstination n'est pas dans le meme monde que celui ou vous etes, vous devez l'indiquer
+Si la map n'est pas visitable cette fonction ne fontionnera pas (/pervisit)
+
+/gun <mode> - Permet d'armer un pistolet
+mode :	- explode : le projectile explose au contacte d'un bloc ou d'un joueur
+	- destroy : le bloc touché est détruit
+	- lazer : le projectile est instantané
+	- tp : vous téléporte au point visé
+Le gun n'est utilisable que lorsque le pergun de la map est activé
+
+/hacks - crash le joueur avec un joli message
+
+/hasirc - affiche si l'IRC est actif ou non
+si il est actif, son adresse est affichée
+
+/help - Affiche l'aide
+/help [commande] - Affiche l'aide sur le fonctionnement d'une fonction
+/help [bloc] - Donne des détailles sur le bloc
+
+/hide <nom> - Rend invisible le joueur
+
+/hollow - Creuse une zone sans provoquer d'inondation
+Un cube esr laisser autour des blocs liquides pour eviter qu'ils se rependent
+/hollow [bloc] - Creuse la zone en laissant un bloc autour de celui demandé
+
+/home - Permet d'aller dans la map spawn de votre monde
+Si celui-ci est innexistant, il sera créé
+
+/host - Montre le nom de l'hebergeur du serveur
+
+/imageprint <type> [image] - Dessine l'image située dans le dossier extra/images/.
+Celle-ci doit etre du type .bmp, ne pas ecrire l'extention de l'image.
+/imageprint <type> [image.extension] - Dessine l'image enregistree sur le site www.imgur.com.
+/imageprint <type> [adresseweb] - Dessine l'image d'adresse domain.com/dossier/image.jpg. Pas besoin de http:// ou www.
+Types :	1 - 2 epaisseurs, couleurs
+	2 - 1 epaisseur, couleurs
+	3 - 2 epaisseur, niveau de gris
+	4 - 1 epaisseur, niveau de gris
+	5 - noir ou blanc
+	6 - niveau de gris mathematique
+	layer ou l - pour dessiner horisontalement, accepte un type suplémentaire
+
+/impersonate [joueur] [message] - Envois un message comme si c'est joueur qui l'a envoyé
+
+/import [fichier .dat] - Importe une map en .dat
+Le fichier doit etre placé dans le dossier /extra/import/
+
+/inbox - Liste tous les message recu
+/inbox [num] - Affiche le message séléctionné
+/inbox del [num] - Supprime le message
+/inbox del all - Supprime tous les messages
+
+/info - Affiche des informations sur le serveur
+
+/invincible <joueur> - Rend immortel.
+
+/jail [joueur] - Emprisonne le joueur.
+Il lui sera impossible d'utiliser des commandes.
+Si il est situé sur une autre map que la votre, il sera téléporté.
+/jail create - Crée le point de jail sur la map
+
+/joker [joueur] - Met le joueur en joker
+/joker # [joueur] - Met discretement le joueur en joker
+Le joker consiste a faire dire nimporte quoi au joueur visé
+
+/kick [joueur] <message> - Déconnecte le joueur du serveur
+
+/kickban [joueur] <message> - Banni et déconnecte le joueur
+
+/kill [joueur] <explode> <message> - Tue le joueur
+Si "explode" est marqué, le joueur est tué en explosant
+
+/killinv [joueur] <explode> <message> - Tue le joueur meme si il est invincible
+Si "explode" est marqué, le joueur est tué en explosant
+
+/lastcmd - Affiche la derniere commande éxécuté de tous les joueurs
+/lastcmd [joueur] - Affiche la derniere commande du joueur
+
+/levels <monde> - Affiche toutes les maps du monde
+Si aucun monde n'est précisé, celui ou vous etes est utilisé
+/levels all - Liste toutes les maps chargé du serveur
+
+/like - Permet d'aimer la map ou vous etes actuellement
+/like top - Affiche le top 10 des maps les plus aimé
+/like list - Affiche les nom des joueur aimant la map
+/like reset - Rénitialise les compteurs de la map (réservé aux admins)
+
+/limit [rang] [valeur] - Change la limite de changements de blocs sur les commandes pour un rang
+le rang peut aussi etre "rp" ou "rpnormal" qui limite l'utilisation de /rp
+
+/line <longueur> <bloc> <extra> - Trace une ligne de blocs entre 2 points
+extra :	wall - un rectangle est tracé dans la verticale de la ligne
+
+/lisse <parametre> - Permet de lisser la zone séléctonné
+parametre :	faible - Permet de faire un lissage légé
+		fort - Fait un lissage fort
+ATTENTION : ne pas l'utiliser a proxilitée de liquides
+
+/lmissile - Permet de tirer un missile lent
+Il est possible de marcher sur ce missile
+Le pergun doit etre activé sur la map pour pouvoir l'utiliser
+
+/load [map] <monde> - Charge une map
+
+/lowlag - Active le mode lowlag
+Les maps seront plus lente a charger, les déplacements des joueurs moins visible et les physics moins efficace.
+Mais en contrepartis, le serveur aura moins de lags
+
+/main - Permet de retourner sur la map principale du serveur
+
+/map <map> [option] <parametre> - Modifie les options de la map
+Vous devez etre dans le meme monde que la map pour voir ou modifier ses options
+options : theme, finite, ai, edge, ps, overload, motd, death, fall, drown, unload, rp, instant, killer, chat
+Edge : modifie l'ecoulement de l'eau.
+Grass : Permet a l'herbe de ne pas pousser sans la physics
+Finite : Tous les liquides sont finite.
+AI : Les animaux vous suivent ou vous fuient.
+PS : Change la vitesse de la physics.
+Overload : Fixe les limites de puissances de la physics.
+MOTD : Change le motd de la map.(mettre un blanc pour reset)
+Death : Active/desactive le mode survie (chute, noyade)
+Fall/drown : Change la distance/temps avant de mourir.
+Killer : Active/desactive les blocs mortels.
+Unload : Definit si la map se decharge si personne est dessus.
+RP : Definit si la physics demarre automatiquement.
+Instant : n'affiche pas toutes les modifications des joueurs.
+Chat : Le tchat ne se fait plus avec les autres maps.
+
+/mapinfo <map> <monde> - Donne des infos sur la map
+
+/maptchat - Tous les messages seront uniquement envoyé aux joueurs etant sur la meme map
+
+/me [message] - Envois un message de style RP (role play)
+
+/measure <ignore> - compte le nombre de blocs entre les 2 points sans compter le bloc a ignorer
+
+/megaboid <type> <parametre> - crée un cube de bloc avec parametre
+Utiliser ceci permet d'éviter les lags et de dépasser les limites jusqu'a 450000 blocs
+Vous pouvez l'aretter a tout moment en utilisant /abort
+liste des parametres valides :
+solid : type par défaut, un cube plein
+hollow : 
+walls : seul les 4 cotés verticaux sont déssinés
+holes : 
+wire :
+random : place aléatoirement un bloc a 50%
+
+/megajail [joueur] - Jail, freeze et joker le joueur
+
+/mb <bloc> [message] - Place un message dans un bloc
+blocs valide : white, black, air, water, lava
+Vous pouvez aussi placer une fonction dans le mb en commencant le message par "/" (pour modos minimum)
+/mb show - Affiche tous les mbs de la map (en blanc)
+
+/missile [parametre] - Tire un missile mortelle
+parametres : 	explode - Explose au contact d'un bloc ou d'un joueur
+		destroy - detruit le bloc touché
+Le pergun doit etre activé sur la map pour pouvoir l'utiliser
+
+/mode [bloc] - Tous les blocs placé seront celui spécifié
+/[bloc] donne la meme chose
+
+/moderate - Active la modération du tchat
+Seulement ceux qui ont la voix peuvent parler
+
+/move [joueur] [map] <monde> - Change le joueur de map
+/move <joueur> [x] [y] [z] - Change les coordonées du joueur
+Le joueur restera sur la meme map
+
+/museum [map] [world] <num backup> - Permet d'acceder a une ancienne sauvegarde de la map
+A cet endroit vos modifications ne seront pas sauvegarder
+Vous ne verez pas les joueurs étant sur la meme map
+Certaine fonction ne sont pas executable dans le musée
+
+/mute [joueur] - Met en sourdine le joueur
+
+/newlvl [nom map] [taille X] [taille Y] [taille Z] [type] - Crée une nouvelle map dans le monde ou vous etes
+Vous devez etre le propriétaire du monde pour l'effectuer
+Tyoes :	island - une map en forme d'ile
+	mountains - une map de montagnes avec beaucoups de reliefs
+	forest - une map pleine de forets et peux de reliefs
+	ocean - grand ocean avec un niveau d'eau élevé
+	flat - une map toute plate en herbe
+	pixel - une map adapté pour du pixelart avec de grands murs blanc
+	desert - une map désertique
+
+/news - Vous affiche toutes les nouveautées du serveur
+/news [joueur] - Envois les news au joueur
+
+/notes - Affiche vos notes personnelles
+/notes [joueur] - Affiche les notes d'un autre joueur (modo minimum)
+/notes add [message] - ajoute une ligne a vos notes
+/notes del [ligne] - Supprime une ligne a vos notes
+/notes del all - Supprime toutes les notes
+
+/nuke - Permet de creer d'enormes explosions
+Ne peut etre utiliser que lorsque le pergun est activé
+
+/optchat - Tous les messages écrit seront uniquement envoyé aux modos
+

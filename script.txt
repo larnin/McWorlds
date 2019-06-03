@@ -1,0 +1,57 @@
+Liste des parametres : <facultatif> [obligatoire]
+
+- changebloc
+  changebloc <type>
+  changebloc <type> <x> <y> <z>
+	déclenche un changement de bloc
+
+- move
+  move x y z
+	déplace le joueur aux coordonées donné (ou actuelles)
+
+- if <parametre> == <value> 
+  else
+  endif
+	execute une condition
+
+- boucle ( <parametre> == <value>)
+  endboucle
+	Permet l'execution d'un élément tant que la condition est vrais
+
+- var variable = <nombre>
+  var variable = <nombre1> | <nombre2> ...	//variables complexes
+  var variable = <variable> + autre ... 	//operation sur les variables
+	operateurs : + - / *
+  var variable 1 = <variable> + autre ...	//operation sur une valeur de variable complexe
+
+- commande cmd parametres
+	executer une commande
+
+- message
+	envoyer un message au joueur concerne
+
+- wait nbtics
+	faire patienter le script
+
+- stop
+	aretter l'execution du script
+
+variables :
+px
+py
+pz
+pmoney
+pfly
+pgun
+pname
+ptitle
+pdeaths
+prang
+pblocks
+pvip
+pbuild
+
+lplayers	// compte le nombre de joueurs sur la map
+
+variables complexes :
+ppos

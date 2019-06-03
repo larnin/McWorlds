@@ -1,0 +1,4 @@
+- redstone allumé : red
+- redstone ettein : white
+- torche allumée : champi rouge
+- torche etteinte : champi marron
