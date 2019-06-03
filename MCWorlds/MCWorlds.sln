@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCLawl", "MCLawl.csproj", "{12597DB0-7C34-4DE1-88EA-9250FF3372EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCWorlds", "MCWorlds.csproj", "{12597DB0-7C34-4DE1-88EA-9250FF3372EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

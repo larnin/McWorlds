@@ -65,7 +65,7 @@ namespace MCWorlds
         {
             string postVars = staticVars;
 
-            string url = "https://minecraft.net/heartbeat.jsp";
+            string url = "https://www.classicube.net/server/heartbeat/";
             int totalTries = 0;
     retry:  try
             {

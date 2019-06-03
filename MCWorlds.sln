@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCLawl_", "MCLawl\MCLawl_.csproj", "{12597DB0-7C34-4DE1-88EA-9250FF3372EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCWorlds_", "MCWorlds\MCWorlds_.csproj", "{12597DB0-7C34-4DE1-88EA-9250FF3372EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "MCLawl\Starter.csproj", "{63DCBB31-92CD-4464-A86C-A7E51A5FE9FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "MCWorlds\Starter.csproj", "{63DCBB31-92CD-4464-A86C-A7E51A5FE9FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

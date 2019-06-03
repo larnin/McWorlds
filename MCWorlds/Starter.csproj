@@ -84,9 +84,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="MCLawl_.csproj">
+    <ProjectReference Include="MCWorlds_.csproj">
       <Project>{12597DB0-7C34-4DE1-88EA-9250FF3372EB}</Project>
-      <Name>MCLawl_</Name>
+      <Name>MCWorlds_</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
